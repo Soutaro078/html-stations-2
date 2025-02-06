@@ -1,0 +1,67 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 100px;
+  }
+  
+  .height { 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5; /* 修正: 2 / 5 */
+    writing-mode: vertical-rl; /* 縦書きに設定 */
+    text-orientation: upright; /* 文字を縦方向に表示 */
+  }
+  
+  .row1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; /* 修正: 2 / 3 */
+  }
+  
+  .row2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4; /* 修正: 3 / 4 */
+  }
+  
+  .row3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5; /* 修正: 4 / 5 */
+  }
+  
+  header {
+    grid-column-start: 1;
+    grid-column-end: 3; /* 修正: 1 / 3 */
+    grid-row-start: 1;
+    grid-row-end: 2; /* 修正: 1 / 2 */
+  }
+  
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 3; /* 修正: 1 / 3 */
+    grid-row-start: 5;
+    grid-row-end: 6; /* 修正: 5 / 6 */
+  }
+
+  /* フェードアウトするアニメーション */
+          
+ 
+/* 
+  
+  .box1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  
+  .box2 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  } */

@@ -1,0 +1,13 @@
+  /* フェードアウトするアニメーション */
+          
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+/* フェードアウトするクラス（JavaScriptで追加） */
+#animation {
+    animation: fadeOut 1s linear forwards;
+ } 
+/* 
